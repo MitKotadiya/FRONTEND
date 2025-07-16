@@ -6,13 +6,16 @@
   <title>Corona API</title>
   <link rel="stylesheet" href="corona.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="glass-card p-4">
-      <form>
+      <form data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="mb-3">
+          <h1 class="text-white">India COVID Stats by State</h1>
+          <hr class="text-white">
           <label class="form-label text-white">Select Date</label>
           <input type="date" id="search" class="form-control" />
         </div>
@@ -21,11 +24,11 @@
       <hr class="text-white">
       <div id="loader" style="display: none;">Loading...</div>
       <div class="text-white mt-3">
-        <p>Date: <span id="day"></span></p>
-        <p>Total Cases: <span id="total"></span></p>
-        <p>Indian: <span id="confirmed"></span></p>
-        <p>Discharged: <span id="discharged"></span></p>
-        <p>Deaths: <span id="deaths"></span></p>
+        <p data-aos="fade-right">Date: <span id="day"></span></p>
+        <p data-aos="fade-right">Total Cases: <span id="total"></span></p>
+        <p data-aos="zoom-in">Indian: <span id="confirmed"></span></p>
+        <p data-aos="fade-left">Discharged: <span id="discharged"></span></p>
+        <p data-aos="fade-left">Deaths: <span id="deaths"></span></p>
       </div>
     </div>
   </div>
@@ -34,5 +37,9 @@
   </div>
 
   <script src="corona.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
