@@ -4,7 +4,8 @@ body {
   background-image: url('corona-5401250_1280.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
 }
 
 .glass-card {
