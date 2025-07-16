@@ -1,0 +1,31 @@
+@media (min-width: 576px) {
+    .banner-content h5 {
+        font-size: 35px!important;
+    }
+
+}
+@media (min-width: 768px) {
+    .banner-inner{
+        padding: 75px; 
+    }
+    .banner-content h5 {
+        font-size: 40px!important;
+        font-weight: 800;
+    }
+    .banner-img img{
+        margin-top: 95px;
+    }
+
+}
+@media (min-width: 992px) {
+    .banner-content h5 {
+        font-size: 40px!important;
+        font-weight: 800;
+    }
+    .banner-img img{
+        margin-top: 0;
+        margin-left: 50px;
+        align-items: center;
+    }
+
+}

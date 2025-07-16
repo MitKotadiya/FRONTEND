@@ -1,0 +1,25 @@
+.box{
+    height:400px;
+    width:400px;
+    background-size:cover;
+    background-position:10px 10px;
+    background-repeat:no-repeat;
+}
+.box1{
+    background:url(../img/nature_1.jpg) red;
+    background-blend-mode:lighten;
+    
+}
+.box2{
+    background:url(../img/nature_2.webp),linear-gradient(#40E0D0,#FF8C00,#FF0080);
+    background-attachment:fixed;
+    height:98vh;
+    background-size:cover;
+    background-repeat:no-repeat
+    
+}
+.box3{
+    background:url(https://avatars.mds.yandex.net/i?id=076c5099877a9ecb671681037faa4585b0506fa1-5159066-images-thumbs&n=13) rgb(60,60,60);
+    background-repeat:no-repeat
+    
+}

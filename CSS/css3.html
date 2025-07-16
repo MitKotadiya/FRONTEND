@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+	<title>Transform&browese-support</title>
+	<style>
+		*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		}
+		.box{
+		width:200px;
+		height:200px;
+		}
+		.box1{
+		background-color:skyblue;
+		-moz-background-color:skyblue;
+		-webkit-background-color:skyblue;
+		-ms-background-color:skyblue;
+		transform:rotate(90deg);
+		}
+		.box2{
+		background-color:yellow;
+		margin-top:25px;
+		transform:rotateX(130deg);
+		}
+		.box3{
+		background-color:red;
+		margin-top:25px;
+		transform:rotateY(20deg);
+		}
+		.main{
+		perspective:800px;
+		}
+		.box4{
+		background-color:black;
+		margin-top:25px;
+		transform:scale(1.2);
+		}
+		.box5{
+		background-color:grey;
+		margin-top:25px;
+		transform:skewX(10deg) skewY(20deg);
+		}
+		.box6{
+		background-color:green;
+		margin-top:25px;
+		transform:translateX(100px) translateY(200px);
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box box1"></div>
+	<div class="main">
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+	</div>
+	<div class="box box4"></div>
+	<div class="box box5"></div>
+	<div class="box box6"></div>
+</body>
+</html>

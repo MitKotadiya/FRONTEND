@@ -1,0 +1,94 @@
+/* BANNER */
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px); 
+    }
+}
+@keyframes typing {
+    from{
+         width: 0
+    }
+    to{ 
+        width: 100% 
+    }
+}
+@keyframes blink {
+    from, to{
+         border-color: transparent 
+    }
+    50%{ 
+        border-color: rgba(13, 110, 253, 0.9);
+    }
+}
+
+/* SKILL */
+
+@keyframes lodinghtml{
+    from{
+         width: 0;
+    }
+    to{ 
+        width: 95%;
+    }
+}
+@keyframes lodingcss{
+    from{
+         width: 0;
+    }
+    to{ 
+        width: 90%;
+    }
+}
+@keyframes lodingbootstrap{
+    from{
+         width: 0;
+    }
+    to{ 
+        width: 87%;
+    }
+}
+@keyframes lodingjs{
+    from{
+         width: 0;
+    }
+    to{ 
+        width: 85%;
+    }
+}
+
+@keyframes lodingHoverhtml {
+    from{ 
+        width: 0;
+    }
+    to{
+        width: 95%;
+     }
+}
+@keyframes lodingHovercss {
+    from{ 
+        width: 0;
+    }
+    to{
+        width: 90%;
+     }
+}
+@keyframes lodingHoverbootstrap {
+    from{ 
+        width: 0;
+    }
+    to{
+        width: 90%;
+     }
+}
+@keyframes lodingHoverjs {
+    from{ 
+        width: 0;
+    }
+    to{
+        width: 85%;
+     }
+}

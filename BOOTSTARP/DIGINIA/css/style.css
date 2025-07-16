@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.syne{
+    font-family: "Syne", sans-serif;
+    font-weight:500;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;    
+}
+.row>*{
+    padding-right:0 !important;
+    padding-left: 0 !important;
+    margin-top: 0 !important;
+}
+body{
+    color: white!important;
+}
+
+/* NAVBAR */
+
+.navbar ul li > a{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    transition: 0.5s;
+}
+.navbar ul li > a:hover , .offcanvas ul li > a:hover{
+    color: #c93ac9;
+}
+.navbar nav + button , .banner button , .branding-content button{
+    background-image: linear-gradient(#c93ac9,#602080);
+    border: none;
+    transition: 1s;
+}
+.navbar nav + button:hover , .banner button:hover , .branding-content button:hover{
+    background-image: linear-gradient(#602080,#c93ac9);
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* BANNER */
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    height: 650px;  
+    margin: 0 50px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+.elementor{
+    padding: 20px;
+    background-image: radial-gradient(at top left, rgba(255, 255, 255, 0.5) 0%, rgba(201, 58, 201, 0.7) 65%);
+    bottom: -10%;
+    left: 70%;
+}
+.divider{
+    width: 4px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: rotate(20deg);
+  }
+
+ /* BRANDINGS  */
+
+.brandings{
+    padding: 100px 0;
+}
+.icon-box{
+    background-color: #3c2c7a;
+    padding: 10px;
+    border-radius: 16px 0 0 0;
+}
+.icon-box + img{
+    border-radius: 0 0 0 16px;
+}
+@media (max-width: 767px) {
+  .brndings-inner-image img {
+    height: auto !important;
+  }
+}

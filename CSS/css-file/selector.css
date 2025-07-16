@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+div h1{
+	background-color:skyblue;
+}
+.coma-selector,h2{
+   color:red;
+}
+.greater-selector > h3{
+	font-size:50px;
+}
+h4::first-letter{
+	font-size:100px;
+	color:blue;
+}
+h4::first-line{
+	font-size:50px;
+	color:red;
+}
+ul{
+	margin-left:50px;
+}
+li:first-Child{
+	color:yellow;
+	font-size:50px;
+}
+li:last-Child{
+	color:red;
+	font-size:50px;
+}
+li:nth-child(2){
+	color:purple;
+	font-size:25px;
+}
+li:nth-child(3){
+	color:blue;
+	font-size:30px;
+}
+li:nth-child(4)::Selection{
+	color:white;
+	background-color:black;
+}
+li:nth-last-child(2){
+	color:pink;
+	font-size:40px;
+}
+.greater-selector  h3 + p{
+	background-color:black;
+	color:white;
+}
+input{
+	color:green;
+}
+input::placeholder {
+  color:red;
+}

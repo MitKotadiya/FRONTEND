@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-style:solid;
+    -webkit-text-stroke-color: red;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;  
+    background-image: url(../img/nature_2.webp);
+    background-clip: text;
+    -webkit-text-stroke: 2px rgb(13, 225, 48);
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;  
+    background-image: linear-gradient(90deg,orange,white,green);
+    background-clip: text;
+    -webkit-text-stroke: 2px rgb(13, 225, 48);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 35px auto;
+    background-color: rgb(223, 223, 223);
+    border: 10px solid transparent;
+    border-image: url(../img/nature_1.jpg);
+    border-image-slice: 10;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.col-6{
+    width: 50%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner-inner{
+    height: 200px;
+    margin-right: 25px;
+    background-color: rgb(228, 67, 217);
+    animation-name: right;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+@keyframes right{
+    0%{
+        transform: translateX(-100%);
+        opacity: 50%;
+    }
+}
+.banner-image{
+    height: 200px;
+    margin-right: 25px;
+    background-color: rgb(28, 184, 208);
+    animation-name: left;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+@keyframes left{
+    0%{
+        transform: translateX(100%);
+        opacity: 50%;
+    }    
+}

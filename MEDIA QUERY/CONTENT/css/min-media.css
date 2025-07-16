@@ -1,0 +1,71 @@
+
+/* XS */
+
+@media(min-width:576px){
+    .container{
+        max-width:540px;
+    }
+    body{
+        background-color:orange;
+    }
+    p{
+        color: blue;
+    }
+}
+
+/* SM */
+
+@media(min-width:768px){
+    .container{
+        min-width:720px;
+    }
+    body{
+        background-color:pink;
+    }
+    p{
+        color: blue;
+    }
+}
+
+/* MD */
+
+@media(min-width:992px){
+    .container{
+        min-width:960px;
+    }
+    body{
+        background-color:red;
+    }
+    p{
+        color: black;
+    }
+}
+
+/* LG */
+
+@media(min-width:1200px){
+    .container{
+        min-width:1140px;
+    }
+    body{
+        background-color:aqua;
+    }
+    p{
+        color: green;
+    }
+}
+
+/* Xl */
+
+@media(min-width:1400px){
+    .container{
+        min-width:1320px;
+    }
+    body{
+        background-color:green;
+    }
+    p{
+        color: red;
+    }
+    
+}

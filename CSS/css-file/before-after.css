@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+h1:before{
+	content:"1";
+	font-size:50px;
+	font-family:nirmala ui;
+	color:red;
+	
+}
+h1:after{
+	content:"55";
+	font-size:50px;
+	font-family:nirmala ui;
+	color:blue;
+	
+}
+.box{
+	height:400px;
+	width:400px;
+	background-color:black;
+	position:relative;
+	color:white;
+}
+.box:before{
+	content:"Mit";
+	height:100px;
+	width:100px;
+	background-color:red;
+	position:absolute;
+	top:0;
+	right:0;
+	line-height:100px;
+	text-align:center;
+	
+}
+.box:after{
+	content:"";
+	height:200px;
+	width:200px;
+	background-image:url(../img/nature_1.jpg);
+	position:absolute;
+	bottom:0;
+	right:0;
+	background-size:cover;
+	background-position:center;
+}
+ul{
+	margin-left:50px;
+	list-style:none;
+	font-size:20px;
+}
+li:before{
+	content:"\ea6d";
+	font-family:remixicon;
+}
+li:after{
+	content:"\ea63";
+	font-family:remixicon;
+}
+h2{
+	display:inline;
+}
+h2:hover{
+	color:blue;
+	font-family:nirmala ui;
+}
+.box:hover h3{
+	color:red;
+	font-family:nirmala ui;
+}
+input{
+	padding:10px;
+	margin:20px 0;
+	border:3px solid black;
+	border-radius:5px;
+	font-family:nirmala ui;
+}
+input:focus{
+	background-color:green;
+}
+a:active{
+	background-color:skyblue;
+	padding:20px;	
+}
+.box1{
+	height:100px;
+	width:100px;
+	background-color:orange;
+	transition-delay: 1s;
+	transition-duration: 5s;
+	transition-timing-function:linear;
+	transition-property: width;
+
+}
+.box1:hover{
+	height:300px;
+	width:300px;
+	background-color:pink;
+	
+}
+.box2{
+	height:100px;
+	width:100px;
+	background-color:red;
+	transition:width 3s linear 4s;
+}
+.box2:hover{
+	height:300px;
+	width:300px;
+	background-color:yellow;
+	
+}

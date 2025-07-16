@@ -1,0 +1,448 @@
+/* XS */
+
+@media(min-width:576px){
+    .container{
+        max-width:540px;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+ /* BANNER */
+
+    .banners{
+        padding: 120px 0 0 0 ;
+    }
+    .banner-btn a{
+        width: 100%;
+        margin-top: 10px;  
+    }
+    .banner-title , .banner-btn p{
+        text-align: center;
+
+    }
+    .banner-title h1{
+        font-size: 65px;
+        line-height: 75px;
+    }
+    .rating-card{
+        width: 100%;
+        margin: 35px 0;
+    }
+    .brand-text h2{
+        text-align: center;
+        margin: 25px 0;
+        font-size: 30px;
+        color:#fff;
+    }
+    .hero-bg img{
+        display: none;
+    }
+
+/* SERVICES */
+
+.services .col-xs-12:first-child:not(:last-child) , .services .col-xs-12:nth-child(2){
+    margin-bottom: 30px;
+}
+
+/* STRATEGIES */
+
+.strategies{
+    padding: 10px 0;
+}
+.strategie-text{
+    text-align: center;
+}
+.strategie-inner ul + a{
+   width: 100%;
+   text-align: center;
+}
+
+/* MARKETINGS  */
+
+.marketing .col-xs-12:first-child:not(:last-child) , .marketing .col-xs-12:nth-child(2){
+    margin-bottom: 30px;
+}
+
+/* SUPPORT */
+
+.supports{
+    padding: 10px 0;
+}
+.support-text{
+   text-align: center;
+   max-width: 100%;
+}
+.support-text h2 {
+    color: #fff;
+    font-size: 65px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.support-text li h3 {
+   text-align: center;
+   font-size: 26px;
+   max-width: 100%;
+}
+
+.support-text .col-7 + a{
+   width: 100%;
+   margin: 25px 0;
+}
+
+/* RESULTS */
+
+.results{
+    padding: 50px 0;
+    background-color: #130D26;
+}
+.result-title h2{
+    font-size: 50px;
+   
+}
+.result-text h3{
+    font-size: 30px;
+}
+.result-btn a{
+    width: 100%;
+}
+
+/* ABOUTS */
+
+.abouts{
+    padding: 50px 0;
+}
+.abouts .col-xs-12:first-child{
+    order: 2;
+}
+.about-img img{
+    margin-top: 25px;
+}
+.about-text {
+   text-align: center;
+}
+.about-btn a{
+   width: 100%;
+   text-align: center;
+   margin: 10px 0;
+}
+
+/* FOOTER */
+
+.footer-item{
+    margin: 30px 0;
+    text-align: center;
+}
+}
+/* SM */
+
+@media(min-width:768px){
+    .container{
+        max-width:720px;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    
+
+/* HEADER */
+
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }
+    .navbar nav{
+        position: relative;
+        background-color: transparent;
+        display: block;
+    }
+    .navbar nav ul{
+        display: flex;
+    }
+    header nav li:not(:first-child){
+        margin-left:40px;
+    }
+    .toggle{
+        display: none;
+     }
+
+ /* BANNER */
+
+    .banners{
+        padding: 120px 0;
+    }
+
+/* STRATEGIES */
+
+.strategies{
+    padding: 10px 0;
+    
+}
+.strategie-text{
+    text-align: center;   
+}
+
+/* SUPPORT */
+
+.support-img{
+    float: none;
+}
+.support-img-inner{
+    flex-wrap: nowrap;
+}
+
+/* FOOTER */
+
+.copyright ul {
+    justify-content: space-between; 
+}
+}
+
+/* MD */
+
+@media(min-width:992px){
+    .container{
+        max-width:960px;
+    } 
+    .col-md-4{
+        width: 33.33%;
+     }
+    .col-md-5{
+        width: 40.66%;
+     }
+    .col-md-6{
+        width: 50%;
+     }
+    .col-md-7{
+        width: 58.33%;
+    } 
+
+/* BANNER */
+
+ .banners{
+    padding: 120px 0;
+ }
+.banner-title h1{
+    font-size: 100px;
+    line-height: 100px;
+}
+.banner-btn ol{
+    display: flex;
+    justify-content: center;
+}
+.banner-btn ol li{
+    margin-left: 25px;
+}
+.brand-btn span{
+    width: 30%;
+    text-align: center;
+    
+ }
+
+
+/* STRATEGIES */
+
+.strategies{
+    padding: 10px 0; 
+}
+.strategie-inner{
+    max-width: 600px;
+}
+.strategie-text{
+    text-align: left; 
+}
+.strategie-inner ul + a{
+    width: 50%;
+    text-align: center;
+ }
+
+
+ /* RESULTS */
+
+.results{
+    padding: 100px 0;
+    background-color: #130D26;
+}
+.result-title h2{
+    font-size: 60px;
+   
+}
+.result-text h3{
+    font-size: 40px;
+}
+.result-btn a{
+    width: 20%;
+}
+/* ABOUTS */
+
+.abouts{
+    padding: 50px 0;
+}
+.abouts .col-xs-12:last-child{
+    order: 2;
+}
+.about-img img{
+    width: 100%;
+}
+.about-text {
+    text-align: left;
+}
+.about-btn a{
+   width: 45%;
+   text-align: center;
+   margin: 0 10px;
+}
+
+/* FOOTER */
+
+.footer-item{
+    text-align: left;
+}
+}
+
+/* LG */
+
+@media(min-width:1200px){
+    .container{
+        max-width:1140px;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    } 
+    .col-lg-5{
+        width: 40.66%;
+     }
+    .col-lg-6{
+        width: 50%;
+     }
+    .col-lg-7{
+        width: 58.33%;
+    }
+     .col-lg-8{
+        width: 66.66%;
+    }
+
+    /* HEADER */
+
+    .navbar nav + a{
+        display: block;
+    }
+
+/* BANNER */
+
+.banners{
+    padding: 160px 0 0 0;
+ }
+ .banners .col-lg-7 .banner-inner{
+    max-width: 60%;
+ }
+ .banner-btn a{
+    width: 100%;
+    margin-top: 10px;  
+}
+.banner-title , .banner-btn p{
+    text-align: left; 
+}
+.banner-title h1{
+    font-size: 100px;
+    line-height: 100px;
+}
+.banner-btn ol{
+    justify-content: flex-start;
+}
+.banner-btn ol li{
+    margin:0;
+}
+.banner-btn ol li:last-child{
+    margin-left:20px;
+}
+.rating-card{
+    width: 90%;
+    margin: 35px 0;
+}
+
+.brand-text h2{
+    color:#fff;
+    margin-top: 150px;
+    text-align: right;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif; 
+    font-weight: 400;
+} 
+
+.hero-bg img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: 1; 
+}
+
+/* STATIGES */
+
+.strategie-inner ul + a{
+    width: 50%;
+    text-align: center;
+ }  
+
+ /* SUPPORT */
+
+.supports{
+    padding: 100px 0;
+}
+.support-text{
+    text-align: left;
+   max-width: 88%;
+}
+.support-text h2 {
+    color: #fff;
+    font-size: 75px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.support-text li h3 {
+   text-align: left;
+   font-size: 30px;
+   max-width: 50%;
+}
+}
+.support-text .col-7 + a{
+   width: 100%;
+   margin-top: 10px;
+   text-align: center;
+   
+}
+.support-img-inner{
+    gap: 30px;
+    margin-top: 20px;
+   object-fit: cover;
+   object-position: center;
+}
+
+/* Xl */
+
+@media(min-width:1400px){
+    .container{
+        max-width:1320px;
+    }
+    .col-xl-3{
+        width: 25%;
+    } 
+    .support-text .col-7 + a{
+        width: 30%;
+        text-align: center;
+        margin: 35px 0;
+     }
+     
+
+}
+    

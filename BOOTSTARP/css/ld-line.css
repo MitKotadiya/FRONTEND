@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.progress-inner .col-md-6{
+   margin-bottom: 25px; 
+}
+.skill-card {
+    transition: box-shadow 0.8s ease;
+}
+  
+.skill-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+.progress-line-html{
+    width: 94%;
+    animation-name: progress-line-html;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes progress-line-html{
+    0%{
+        width: 0%;
+    }
+    94%{
+        width: 94%;
+    }
+}
+.progress-line-css{
+    width: 90%;
+    animation-name: progress-line-css;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes progress-line-css{
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 90%;
+    }
+}
+.progress-line-bootstrap{
+    width: 85%;
+    animation-name: progress-line-bootstrap;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes progress-line-bootstrap{
+    0%{
+        width: 0%;
+    }
+    85%{
+        width: 85%;
+    }
+}.progress-line-js{
+    width: 80%;
+    animation-name: progress-line-js;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes progress-line-js{
+    0%{
+        width: 0%;
+    }
+    80%{
+        width: 80%;
+    }
+}

@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.main-div{
+	background-color:yellow;
+	border:5px solid red;
+	margin-bottom:50px;
+
+}
+.container-width{
+	min-width:720px;
+	max-width:1320px;	
+	margin:0 auto;
+	padding:0 15px;
+	align-items:justify;
+}
+/* .container-max-height{ */
+	/* max-height:250px;  */
+/* } */
+/* .container-min-height{ */
+	/* min-height:100px;  */
+/* } */

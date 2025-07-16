@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>float & object</title>
+		<style>
+			*{
+			padding 0;
+			margin 0;
+			box-sizing:border-box;
+			}
+			.box{
+			height:200px;
+			width:200px;
+			padding:50px 20px 10px 50px;
+			margin:50px 20px 50px 10px;	
+			border:10px solid black;
+			}
+			
+			.box1{
+			background-color:skyblue;
+			float:left;
+			}
+			
+			.box2{
+			background-color:yellow;
+			float:left;
+			}
+			.clear-fix{
+			clear:both;
+			}
+			img{
+			width:900px;
+			height:800px;
+			object-fit:cover;
+			object-position:center;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box box1"></div>
+		<div class="box box2"></div>	
+		<div class="box box1"></div>
+		<div class="box box2"></div>	
+		<div class="clear-fix"></div>
+		<div class="box box2"></div>		
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box1"></div>
+		<div class="clear-fix"></div>
+		
+		<img src="img/nature_1.jpg" alt="nature" title="nature"/>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing:border-box;
+}
+.box{
+	height:90px;
+	width:90px;
+	border:5px solid black;
+	text-align: center;
+	line-height:90px;
+}
+
+.box1{
+	background-color:#C7DB9C;
+	float:left;
+	font-size:50px;
+}
+
+.box2{
+	background-color:#AA60C8;
+	float:left;
+	font-size:50px
+}
+
+.clear-fix{
+	clear:both;
+	
+}
+.chessboard{
+	margin:0 25% 0 25%;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+	</head>
+	<body>
+		
+		
+		<a href="tags.html" target="_blank">open Tags page</a> <br/>
+		<a href="marquee.html" target="_blank">open image & Marquee page</a><br/>
+		<a href="ancore_tag.html" target="_blank">open Ancore tag & font  page</a> <br/>
+		<a href="form.html" target="_blank">open Forme page</a><br/>
+		<a href="table.html" target="_blank">open Tabel page</a><br/>
+		
+		<center>
+			<h1>Contact Form</h1>
+			<hr><hr>
+			
+			<form>
+				<table border="5" cellpadding="10" cellspacing="0" width="500">
+					<thead>
+						
+						<tr>
+							<td><label">Name:</label></td>
+							<td><input type="text" placeholder="Name" required></td>
+						</tr>
+						
+						<tr>
+							<td><label >Email:</label></td>
+							<td><input type="email" placeholder="Email" required></td>
+						</tr>
+						
+						<tr>
+							<td><label>Message:</label></td>
+							<td><textarea placeholder="Message" rows="4" cols="30" required></textarea></td>
+						</tr>
+						
+						<tr>
+							<td><label>Gender:</label></td>
+							<td>
+								<input type="radio" id="male" name="gender" > <label for="male">Male</label>
+								<input type="radio" id="female" name="gender"> <label for="female">Female</label>
+								<input type="radio" id="other" name="gender" > <label for="other">Other</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label >Country:</label></td>
+							<td>
+								<select >
+									<option >India</option>
+									<option >USA</option>
+									<option>UK</option>
+									<option >Canada</option>
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<td><label >Birth Date:</label></td>
+							<td><input type="date" ></td>
+						</tr>  
+						
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" value="Submit">
+								<input type="reset" value="Reset">
+							</td>
+						</tr>
+						
+					</thead>
+				</table>
+			</form>
+		</center>
+	</body>
+</html>
