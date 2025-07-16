@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Counter</title>
+    <link rel="stylesheet" href="Str_counter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- STRING COUNTER -->
+<section class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="glass-container p-4 rounded shadow-lg">
+        <h2 class="text-center mb-4 text-white"> String Counter</h2>
+        <form id="stringCounterForm">
+            <div class="mb-3">
+                <label class="form-label text-white">Enter String</label>
+                <input type="text" id="inputString" class="form-control glass-input" placeholder="e.g., Hello World">
+                <div class="form-text text-danger" id="errorshowstr"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-white">Enter One Character (A-Z)</label>
+                <input type="text" id="inputChar" class="form-control glass-input" placeholder="e.g., M">
+                <div class="form-text text-danger" id="errorshowchar"></div>
+            </div>
+            <button type="submit" class="btn btn-light w-100 mb-3">Count</button>
+                <p class="text-warning" id="length"></p>       
+                <p class="text-warning" id="charcount"></p>   
+                <p class="text-warning" id="vowelcount"></p>
+        </form>
+        <hr class="text-white">
+        <form id="strgenerate">
+            <div class="mb-3">
+                <label class="form-label text-white">String Length For Generate String</label>
+                <input type="number" id="num" class="form-control glass-input">
+                <div class="form-text text-danger" id="generateer"></div>
+            </div>
+            <button type="submit" class="btn btn-light w-100 mb-3">Generate Random String</button>
+            <p class="text-success" id="strgen"></p>   
+        </form>
+    </div>
+</section>
+
+<script src="Str_counter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

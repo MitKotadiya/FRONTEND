@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather-app {
+    background: url('tree.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.glass-card {
+    backdrop-filter: blur(15px);
+    background-color: rgba(240, 244, 249, 0.12); 
+    box-shadow: 0 8px 32px rgba(47, 47, 47, 0.35);
+    border-radius: 30px;
+    color: #f0f4f9;
+    width: 95%;
+    max-width: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-left,
+.glass-right {
+    padding: 55px;
+}
+
+.glass-right {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1.display-3 {
+    color: #9ed3f5; 
+}
+
+h3, p, span {
+    color: #f0f4f9; 
+}
+
+.cloud-icon img {
+    filter: drop-shadow(0 0 5px #9ed3f5); 
+}
+
+input::placeholder {
+    color: rgba(74, 3, 44, 0.5)!important;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+}
+
+.btn-outline-light {
+    border-color: #d8a55c;
+    color: #d8a55c;
+}
+
+.btn-outline-light:hover {
+    background-color: #d8a55c;
+    color: #4d3b2f; 
+}
+
+@media (max-width: 768px) {
+    .glass-right {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}

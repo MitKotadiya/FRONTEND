@@ -1,0 +1,100 @@
+body {
+    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    max-width: 480px;
+    width: 100%;
+    color: #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.currency-content label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+.currency-content input,
+.currency-content select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.2rem;
+    background: #1e293b;
+    color: #f1f5f9;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s, background 0.3s;
+}
+
+.currency-content input:focus,
+.currency-content select:focus {
+    border-color: #ff914d;
+    background: #1c2535;
+}
+
+.currency-content button {
+    width: 100%;
+    padding: 0.85rem;
+    background: #ff914d;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.currency-content button:hover {
+    background: #ffab73;
+}
+
+#swap {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#swap:hover {
+    transform: rotate(180deg);
+    color: #ff914d;
+}
+
+#error,
+#errorshowfrom,
+#errorshowto,
+#errorshowamount {
+    color: #f87171;
+    font-size: 0.85rem;
+    margin-top: -10px;
+    margin-bottom: 0.7rem;
+    display: block;
+}
+
+#result {
+    margin-top: 1rem;
+    color: #4ade80;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}

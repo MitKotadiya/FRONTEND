@@ -1,0 +1,61 @@
+body {
+    background: url('Form-bg.jfif') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+.glass-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder,
+.form-select {
+    color: #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-glass:hover {
+    background: white;
+    color: black;
+}
+.error{
+    margin-top: 10px;
+    color: red;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="glass-form" id="og-form">
+      <h2>Register</h2>
+      <form>
+        <div class="mb-3">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="Narendra Modi">
+          <p><i class="error" id="err-fullname"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="text" class="form-control" id="email" placeholder="example@email.com">
+          <p><i class="error" id="err-email"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
+          <p><i class="error" id="err-phone"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender">
+            <option selected disabled value="">Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <p><i class="error" id="err-gender"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="text" class="form-control" id="dob">
+          <p><i class="error" id="err-dob"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass" placeholder="••••••••">
+          <p><i class="error" id="err-pass"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="cpass" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="cpass" placeholder="••••••••">
+          <p><i class="error" id="err-cpass"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="123, Street, City, Country"></textarea>
+          <p><i class="error" id="err-address"></i></p>
+        </div>
+        <button type="submit" class="btn btn-glass w-100">Sign Up</button>
+      </form>
+    </div>
+
+      <div class="main-wrapper">
+    <div class="glass-form" id="ed-form" style="display: none;">
+      <h2>Edit</h2>
+      <form>
+        <div class="mb-3">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="edfullname" placeholder="Narendra Modi">
+          <p><i class="error" id="err-fullname"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="text" class="form-control" id="edemail" placeholder="example@email.com">
+          <p><i class="error" id="err-email"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="edphone" placeholder="+91 9876543210">
+          <p><i class="error" id="err-phone"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="edgender">
+            <option selected disabled value="">Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <p><i class="error" id="err-gender"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="text" class="form-control" id="eddob">
+          <p><i class="error" id="err-dob"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="edpass" placeholder="••••••••">
+          <p><i class="error" id="err-pass"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="cpass" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="edcpass" placeholder="••••••••">
+          <p><i class="error" id="err-cpass"></i></p>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea class="form-control" id="edaddress" rows="3" placeholder="123, Street, City, Country"></textarea>
+          <p><i class="error" id="err-address"></i></p>
+        </div>
+        <button type="submit" class="btn btn-glass w-100">Confirm details</button>
+      </form>
+    </div>
+
+    <div class="glass-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

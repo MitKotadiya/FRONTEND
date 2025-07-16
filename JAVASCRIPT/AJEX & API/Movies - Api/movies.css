@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('./movie-bg.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.movies {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.movies-inner {
+  background: rgba(0, 40, 70, 0.5);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+form label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #7fe9ff;
+}
+
+#search {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #e0f7ff;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #cceeff;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 180, 255, 0.6);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: rgba(0, 180, 255, 0.8);
+}
+
+.poster img {
+  border-radius: 12px;
+  margin: 20px 0;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 180, 255, 0.4);
+}
+
+.movies-details table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movies-details th,
+.movies-details td {
+  padding: 10px 25px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+}
+
+.movies-details th {
+  width: 50%;
+  background: rgba(0, 180, 255, 0.1);
+  color: #7fe9ff;
+  font-weight: bold;
+}
+
+.movies-details td {
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+}

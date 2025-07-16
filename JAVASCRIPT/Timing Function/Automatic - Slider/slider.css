@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    padding: 20px;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 172, 193, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 172, 193, 0.4);
+    z-index: 10;
+}
+button:hover {
+    background: rgba(0, 131, 143, 0.4);
+    box-shadow: 0 0 30px rgba(0, 172, 193, 0.6), 0 0 40px rgba(0, 172, 193, 0.3) inset;
+    transform: translateY(-50%) scale(1.1);
+}
+button.prev {
+    left: 2%;
+}
+button.next {
+    right: 2%;
+}
+img#slider {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 576px) {
+    button {
+        padding: 8px 10px;
+    }
+
+    .sliders {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    button {
+        padding: 10px 14px;
+    }
+
+    button.prev {
+        left: 3%;
+    }
+
+    button.next {
+        right: 3%;
+    }
+}

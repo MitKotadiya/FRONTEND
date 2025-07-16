@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Date Forward Calculator</title>
+  <link rel="stylesheet" href="Date - Calculate.css">
+</head>
+<body>
+  <div class="glass-container">
+    <form>
+      <h2>Date Forward Calculator</h2>
+
+      <label for="crdate">Start Date</label>
+      <input type="date" id="crdate" required>
+
+      <label for="number">Forward Days</label>
+      <input type="number" id="number" placeholder="Enter number of days" >
+
+      <p class="error" id="errorshow"></p>
+
+      <button type="submit">Calculate</button>
+
+      <p id="result" style="margin-top: 10px; font-weight: bold; color: #333;"></p>
+    </form>
+  </div>
+  <script src="Date - Calculate.js"></script>
+</body>
+</html>

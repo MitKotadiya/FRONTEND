@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.glass-container {
+    max-width: 550px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px 30px;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25);
+}
+
+button.btn {
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.02);
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+form + hr + form {
+    margin-top: 30px;
+}

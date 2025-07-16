@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.budget-inner {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input.form-control,
+button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+input.form-control::placeholder {
+  color: #ccc;
+}
+
+input.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-light {
+  border-radius: 30px;
+}
+
+.data-table .table {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.table thead th , .table tbody tr td {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.table tbody tr td {
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.clearerror {
+  color: #ffc107;
+  font-weight: 500;
+}
+
+
