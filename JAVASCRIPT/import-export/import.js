@@ -2,6 +2,8 @@ const john = require('./export');
 console.log(john(10,2));
 
 const {addition} = require('./export')
+console.log(addition(10,20));
+
 
 
 import math from './export.js'; 
