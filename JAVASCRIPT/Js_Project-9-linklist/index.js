@@ -13,17 +13,33 @@ class CircularLinkedList {
         this.tail = null;
     }
 
+    // addlast(value){
+    //     let newnode = new Nodelist(value)
+
+    //     if (this.head === null) {
+    //         this.head = newnode;
+    //         this.tail = newnode;
+    //         this.tail.next = this.head
+    //     }else{
+    //         this.tail.next = newnode
+    //         newnode.next = this.head
+    //         this.tail = newnode
+    //     }
+    // }
+    
     addlast(value){
         let newnode = new Nodelist(value)
 
-        if (this.head === null) {
-            this.head = newnode;
-            this.tail = newnode;
-            this.tail.next = this.head
+        if (this.head == null) {
+           this.head = newnode;
+           this.head.next = this.head
         }else{
-            this.tail.next = newnode
-            newnode.next = this.head
-            this.tail = newnode
+            let current = this.head; // 10 , node
+            while (current.next !== this.head) {  //   10 , node !==  10 , node
+                current = current.next
+            }
+             newnode.next = this.head
+             current.next = newnode;
         }
     }
 
@@ -66,10 +82,6 @@ class CircularLinkedList {
 let circular = new CircularLinkedList();
 circular.addlast(10);
 circular.addlast(20);
-circular.addlast(30);
-circular.addlast(40);
-circular.remove();
-circular.remove();
 circular.display();
 
 
