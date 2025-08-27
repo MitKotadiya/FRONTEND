@@ -1,47 +1,47 @@
 // 1. Write a program for Stack Operation Program (Insert, Delete, isEmpty, Length) - 4 mark.
 
-// class Stack {
-//     constructor(){
-//         this.stack = []
-//     }
-//     Insert(val){
-//         this.stack.push(val)
-//     }
-//     Delete() {
-//         if (this.stack.length > 0) {
-//              return this.stack.pop();
-//         } else {
-//             console.log("Stack is empty STOP!!!!!");
-//         }
-//     }
-//     isEmpty(){
-//         if (this.stack.length < 1) {
-//             console.log("Stack is empty");
-//         }else{
-//             console.log("Stack is Not empty");
-//         }
-//     }
-//     Length() {
-//         console.log("Stack Length :" , this.stack.length);
-//     }
-//     Display(){
-//         console.log(this.stack);
+class Stack {
+    constructor(){
+        this.stack = []
+    }
+    Insert(val){
+        this.stack.push(val)
+    }
+    Delete() {
+        if (this.stack.length > 0) {
+             return this.stack.pop();
+        } else {
+            console.log("Stack is empty STOP!!!!!");
+        }
+    }
+    isEmpty(){
+        if (this.stack.length < 1) {
+            console.log("Stack is empty");
+        }else{
+            console.log("Stack is Not empty");
+        }
+    }
+    Length() {
+        console.log("Stack Length :" , this.stack.length);
+    }
+    Display(){
+        console.log(this.stack);
 
-//     }
-// }
+    }
+}
 
-// let Operation = new Stack()
+let Operation = new Stack()
 
-// Operation.Insert(10)
-// Operation.Insert(20)
-// Operation.Insert(300)
-// Operation.Insert(40)
-// Operation.Insert(50)
-// Operation.Insert(100)
-// Operation.Delete()
-// Operation.isEmpty()
-// Operation.Length()
-// Operation.Display()
+Operation.Insert(10)
+Operation.Insert(20)
+Operation.Insert(300)
+Operation.Insert(40)
+Operation.Insert(50)
+Operation.Insert(100)
+Operation.Delete()
+Operation.isEmpty()
+Operation.Length()
+Operation.Display()
 
 // Ourput :
 // Stack is Not empty
