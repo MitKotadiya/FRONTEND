@@ -31,3 +31,26 @@
 //     console.log(`${index} --> ${element}`);
 // })
 // console.log(mapdata)
+
+// weakset ---> setmap store non-premative value (Object) but not show in console becuse its refrance is week
+
+// let a = {"id" : 1} , b = {"id" : 2} 
+
+// let weekset = new WeakSet([a,b]);
+
+// console.log(weekset.has(a));
+
+
+// weakmap ---> sweakmap store non-premative value (Object) but not show in console becuse its refrance is week
+
+let a = { id: 1 }, 
+    b = { id: 2 };
+
+let weakmap = new WeakMap([
+    [a, "first object"],
+    [b, "second object"]
+]);
+
+console.log(weakmap.get(a)); 
+console.log(weakmap.get(b)); 
+
